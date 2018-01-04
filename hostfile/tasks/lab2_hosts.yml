@@ -5,8 +5,8 @@
 
   tasks:
     #Copies local template and makes it host file
-    - name: install lab-01 host file
-      command: "cp /Users/aburke/Documents/Git/ansible-playbooks/hostfile/tasks/files/01-hosts.ansible /etc/hosts"
+    - name: install lab-02 host file
+      command: "cp /Users/aburke/Documents/Git/ansible-playbooks/hostfile/tasks/files/02-hosts.ansible /etc/hosts"
       become: true
     #Test connectivity. Failure will cause script to halt.
     - name: test connectivity
