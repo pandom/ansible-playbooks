@@ -5,9 +5,9 @@
 
   tasks:
     #retrieves data from Server
-    - name: retrieve floatingip-information
-      command: "neutron floatingip-list --os-cacert /home/likewise-open/SINCLOUD/aburke/signing-ca-chain.pem --os-password P@ssw0rd --os-tenant-name lab-aburke-01 --os-username aburke --os-auth-url https://cloud.singapore.local:5000/v2.0 | awk '{print$4,$6}' | grep -v id | grep -v fixed_ip_address > lab01.txt"
-      when: ansible_os_family == "Debian"
+    # - name: retrieve floatingip-information
+    #   command: "neutron floatingip-list --os-cacert /home/likewise-open/SINCLOUD/aburke/signing-ca-chain.pem --os-password P@ssw0rd --os-tenant-name lab-aburke-01 --os-username aburke --os-auth-url https://cloud.singapore.local:5000/v2.0 | awk '{print$4,$6}' | grep -v id | grep -v fixed_ip_address > lab01.txt"
+    #   when: ansible_os_family == "Debian"
     #Copies local template and makes it host file
     - name: install lab-01 host file
       command: "cp /Users/aburke/Documents/Git/ansible-playbooks/hostfile/tasks/files/01-hosts.ansible /etc/hosts"
