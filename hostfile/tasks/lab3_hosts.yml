@@ -1,0 +1,13 @@
+---
+# tasks/lab1_hosts.yml
+- hosts: localhost
+  gather_facts: False
+
+  tasks:
+    #Copies local template and makes it host file
+    - name: install lab-03 host file
+      command: "cp /Users/aburke/Documents/Git/ansible-playbooks/hostfile/tasks/files/03-hosts.ansible /etc/hosts"
+      become: true
+    #Test connectivity. Failure will cause script to halt.
+    - name: test connectivity
+      command: "ping nsxmgr-01a.corp.local -c 2"

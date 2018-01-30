@@ -2,7 +2,7 @@
 255.255.255.255	broadcasthost
 ::1             localhost
 
-10.35.255.205 vc-01a.corp.local vc-01a
-10.35.255.207 nsxmgr-01a.corp.local nsxmgr-01a
-10.35.255.223 vidm-01a.corp.local vidm-01a
-10.35.255.209 vrli-01a.corp.local vrli-01a
+10.35.255.55 vc-01a.corp.local vc-01a
+10.35.255.57 nsxmgr-01a.corp.local nsxmgr-01a
+10.35.255.58 vidm-01a.corp.local vidm-01a
+10.35.255.6 vrli-01a.corp.local vrli-01a

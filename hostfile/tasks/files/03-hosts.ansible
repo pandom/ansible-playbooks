@@ -1,0 +1,6 @@
+127.0.0.1	localhost
+255.255.255.255	broadcasthost
+::1             localhost
+
+10.35.255.37 vc-01a.corp.local vc-01a
+10.35.255.33 nsxmgr-01a.corp.local nsxmgr-01a
